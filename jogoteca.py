@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask,render_template
 
 app=Flask(__name__)
 
-app.run()
-
 @app.route('/inicio')
 def ola():
-    return '<h1>Ola</h1>'
+    return render_template()
+
+app.run()
